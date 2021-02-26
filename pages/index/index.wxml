@@ -1,0 +1,10 @@
+<!--pages/index/index.wxml-->
+<view class="index-container">
+  <view class="user-info">
+    <image src="/static/images/zzf.jpeg" class="avatar"></image>
+    <text class="user-name">张子枫</text>
+  </view>
+  <view class="user-motto">
+    <text>Hello World!</text>
+  </view>
+</view>
