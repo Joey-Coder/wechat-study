@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/logs/logs"
   ],
   "window": {
     "navigationBarBackgroundColor": "#010",
@@ -8,5 +9,6 @@
     "navigationBarTitleText": "welcome",
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light"
-  }
+  },
+  "sitemapLocation": "sitemap52.json"
 }

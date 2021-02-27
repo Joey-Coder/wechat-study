@@ -1,10 +1,13 @@
 <!--pages/index/index.wxml-->
 <view class="index-container">
-  <view class="user-info">
-    <image src="/static/images/zzf.jpeg" class="avatar"></image>
-    <text class="user-name">张子枫</text>
+  <view wx:if="{{ userInfo.avatarUrl }}" class="user-info">
+    <image src="{{ userInfo.avatarUrl }}" class="avatar"></image>
+    <text class="user-name">{{ userInfo.nickName }}</text>
   </view>
-  <view class="user-motto">
+  <view wx:else class="btn">
+    <button open-type="getUserInfo" bindgetuserinfo="handleUserInfo">获取用户信息</button>
+  </view>
+  <view class="user-motto" catchtap="toLogs">
     <text>Hello World!</text>
   </view>
 </view>
